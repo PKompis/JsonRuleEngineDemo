@@ -14,7 +14,6 @@ namespace JsonRuleEngineDemoApi.Interfaces
         /// Posts the simulation method.
         /// </summary>
         /// <param name="request">The request.</param>
-        /// <returns></returns>
         Task<IEnumerable<RuleResultTree>> PostSimulationMethod(DemoType request);
     }
 }

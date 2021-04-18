@@ -19,7 +19,6 @@ namespace JsonRuleEngineDemoApi.Implementation
         /// Posts the simulation method.
         /// </summary>
         /// <param name="request">The request.</param>
-        /// <returns></returns>
         /// <exception cref="Exception">Rules not found.</exception>
         public async Task<IEnumerable<RuleResultTree>> PostSimulationMethod(DemoType request)
         {

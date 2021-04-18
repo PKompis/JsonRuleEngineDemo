@@ -33,7 +33,6 @@
             Posts the simulation method.
             </summary>
             <param name="request">The request.</param>
-            <returns></returns>
             <exception cref="T:System.Exception">Rules not found.</exception>
         </member>
         <member name="T:JsonRuleEngineDemoApi.Interfaces.IDemoInterface">
@@ -46,7 +45,6 @@
             Posts the simulation method.
             </summary>
             <param name="request">The request.</param>
-            <returns></returns>
         </member>
         <member name="T:JsonRuleEngineDemoApi.Program">
             <summary>

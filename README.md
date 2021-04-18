@@ -14,7 +14,7 @@ SerializationBenchmark/
 |   ├── DemoImplementation.cs
 ├── Interfaces/
 |   ├── IDemoInterface.cs
-├── SolutionFiles/
+├── Solution Files/
 |   ├── Workflow.json
 ├── Types/
 |   ├── DemoType.cs
