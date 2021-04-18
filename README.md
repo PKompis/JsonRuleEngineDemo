@@ -1,10 +1,6 @@
 # JsonRuleEngineDemo
 
-The JsonRuleEngineDemo is a demo api for testing microsoft json rule engine.
-
-## Libaries used
-
-- [RulesEngine](https://www.nuget.org/packages/RulesEngine/)
+The JsonRuleEngineDemo is a demo API for testing the [JSON Rule Engine](https://www.nuget.org/packages/RulesEngine/).
 
 ## Source code layout
 
