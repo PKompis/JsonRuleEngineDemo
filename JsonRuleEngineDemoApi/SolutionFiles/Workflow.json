@@ -1,0 +1,68 @@
+﻿[
+  {
+    "WorkflowName": "Demo",
+    "Rules": [
+      {
+        "RuleName": "Demo1",
+        "SuccessEvent": "10",
+        "ErrorMessage": "One or more rules failed.",
+        "ErrorType": "Error",
+        "RuleExpressionType": "LambdaExpression",
+        "Expression": "DemoString != \"Demo\" AND DemoInt >= 2 AND DemoDecimal == 2.0 AND DemoNullableDecimal == 2 AND DemoGuid = \"fa03ab21-a3ff-40d9-b216-2906de7d1307\" AND DemoBool == false AND DemoDateTime > \"2019-01-01\""
+      },
+      {
+        "RuleName": "Demo2",
+        "SuccessEvent": "30",
+        "ErrorMessage": "One or more adjust rules failed.",
+        "ErrorType": "Error",
+        "Operator": "OrElse",
+        "Rules": [
+          {
+            "RuleName": "Demo2a",
+            "ErrorMessage": "One or more rules failed.",
+            "ErrorType": "Error",
+            "RuleExpressionType": "LambdaExpression",
+            "Expression": "DemoString == \"Test1\""
+          },
+          {
+            "RuleName": "Demo2b",
+            "ErrorMessage": "One or more rules failed.",
+            "ErrorType": "Error",
+            "RuleExpressionType": "LambdaExpression",
+            "Expression": "DemoString == \"Test2\""
+          }
+        ]
+      },
+      {
+        "RuleName": "Demo3",
+        "SuccessEvent": "35",
+        "ErrorMessage": "One or more rules failed.",
+        "ErrorType": "Error",
+        "Operator": "AndAlso",
+        "Rules": [
+          {
+            "RuleName": "Demo3a",
+            "ErrorMessage": "One or more rules failed.",
+            "ErrorType": "Error",
+            "RuleExpressionType": "LambdaExpression",
+            "Expression": "DemoInt >= 2"
+          },
+          {
+            "RuleName": "Demo3b",
+            "ErrorMessage": "One or more rules failed.",
+            "ErrorType": "Error",
+            "RuleExpressionType": "LambdaExpression",
+            "Expression": "DemoDecimal == 2.0"
+          },
+          {
+            "RuleName": "Demo3c",
+            "ErrorMessage": "One or more rules failed.",
+            "ErrorType": "Error",
+            "RuleExpressionType": "LambdaExpression",
+            "Expression": "DemoNullableDecimal == 2"
+          }
+        ]
+      }
+    ]
+  }
+]

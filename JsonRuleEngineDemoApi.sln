@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30717.126
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JsonRuleEngineDemoApi", "JsonRuleEngineDemoApi\JsonRuleEngineDemoApi.csproj", "{87D818B1-64D9-41F5-B918-3229CDFB51AF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{87D818B1-64D9-41F5-B918-3229CDFB51AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87D818B1-64D9-41F5-B918-3229CDFB51AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87D818B1-64D9-41F5-B918-3229CDFB51AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87D818B1-64D9-41F5-B918-3229CDFB51AF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DC35B5E2-E47C-41A5-B532-163DA1D0B152}
+	EndGlobalSection
+EndGlobal

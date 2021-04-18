@@ -1,0 +1,170 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>JsonRuleEngineDemoApi</name>
+    </assembly>
+    <members>
+        <member name="T:JsonRuleEngineDemoApi.Controllers.DemoController">
+            <summary>
+            Demo Controller
+            </summary>
+            <seealso cref="T:Microsoft.AspNetCore.Mvc.ControllerBase" />
+        </member>
+        <member name="M:JsonRuleEngineDemoApi.Controllers.DemoController.#ctor(JsonRuleEngineDemoApi.Interfaces.IDemoInterface)">
+            <summary>
+            Initializes a new instance of the <see cref="T:JsonRuleEngineDemoApi.Controllers.DemoController"/> class.
+            </summary>
+            <param name="demoInterface">The demo interface.</param>
+        </member>
+        <member name="M:JsonRuleEngineDemoApi.Controllers.DemoController.Post(JsonRuleEngineDemoApi.Types.DemoType)">
+            <summary>
+            Posts the specified request.
+            </summary>
+            <param name="request">The request.</param>
+        </member>
+        <member name="T:JsonRuleEngineDemoApi.Implementation.DemoImplementation">
+            <summary>
+            Demo Implementation
+            </summary>
+            <seealso cref="T:JsonRuleEngineDemoApi.Interfaces.IDemoInterface" />
+        </member>
+        <member name="M:JsonRuleEngineDemoApi.Implementation.DemoImplementation.PostSimulationMethod(JsonRuleEngineDemoApi.Types.DemoType)">
+            <summary>
+            Posts the simulation method.
+            </summary>
+            <param name="request">The request.</param>
+            <returns></returns>
+            <exception cref="T:System.Exception">Rules not found.</exception>
+        </member>
+        <member name="T:JsonRuleEngineDemoApi.Interfaces.IDemoInterface">
+            <summary>
+            Demo Interface
+            </summary>
+        </member>
+        <member name="M:JsonRuleEngineDemoApi.Interfaces.IDemoInterface.PostSimulationMethod(JsonRuleEngineDemoApi.Types.DemoType)">
+            <summary>
+            Posts the simulation method.
+            </summary>
+            <param name="request">The request.</param>
+            <returns></returns>
+        </member>
+        <member name="T:JsonRuleEngineDemoApi.Program">
+            <summary>
+            Program
+            </summary>
+        </member>
+        <member name="M:JsonRuleEngineDemoApi.Program.Main(System.String[])">
+            <summary>
+            Defines the entry point of the application.
+            </summary>
+            <param name="args">The arguments.</param>
+        </member>
+        <member name="M:JsonRuleEngineDemoApi.Program.CreateHostBuilder(System.String[])">
+            <summary>
+            Creates the host builder.
+            </summary>
+            <param name="args">The arguments.</param>
+            <returns></returns>
+        </member>
+        <member name="T:JsonRuleEngineDemoApi.Startup">
+            <summary>
+            Startup class
+            </summary>
+        </member>
+        <member name="M:JsonRuleEngineDemoApi.Startup.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Initializes a new instance of the <see cref="T:JsonRuleEngineDemoApi.Startup"/> class.
+            </summary>
+            <param name="configuration">The configuration.</param>
+        </member>
+        <member name="P:JsonRuleEngineDemoApi.Startup.Configuration">
+            <summary>
+            Gets the configuration.
+            </summary>
+            <value>
+            The configuration.
+            </value>
+        </member>
+        <member name="M:JsonRuleEngineDemoApi.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Configures the services.
+            </summary>
+            <param name="services">The services.</param>
+        </member>
+        <member name="M:JsonRuleEngineDemoApi.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IWebHostEnvironment)">
+            <summary>
+            Configures the specified application.
+            </summary>
+            <param name="app">The application.</param>
+            <param name="env">The env.</param>
+        </member>
+        <member name="T:JsonRuleEngineDemoApi.Types.DemoType">
+            <summary>
+            Demo class
+            </summary>
+        </member>
+        <member name="P:JsonRuleEngineDemoApi.Types.DemoType.DemoString">
+            <summary>
+            Gets or sets the demo string.
+            </summary>
+            <example>Test1</example>
+            <value>
+            The demo string.
+            </value>
+        </member>
+        <member name="P:JsonRuleEngineDemoApi.Types.DemoType.DemoInt">
+            <summary>
+            Gets or sets the demo int.
+            </summary>
+            <example>2</example>
+            <value>
+            The demo int.
+            </value>
+        </member>
+        <member name="P:JsonRuleEngineDemoApi.Types.DemoType.DemoDateTime">
+            <summary>
+            Gets or sets the demo date time.
+            </summary>
+            <example>2021-04-04T17:23:01.049Z</example>
+            <value>
+            The demo date time.
+            </value>
+        </member>
+        <member name="P:JsonRuleEngineDemoApi.Types.DemoType.DemoDecimal">
+            <summary>
+            Gets or sets the demo decimal.
+            </summary>
+            <example>2.0</example>
+            <value>
+            The demo decimal.
+            </value>
+        </member>
+        <member name="P:JsonRuleEngineDemoApi.Types.DemoType.DemoNullableDecimal">
+            <summary>
+            Gets or sets the demo nullable decimal.
+            </summary>
+            <example>2.0</example>
+            <value>
+            The demo nullable decimal.
+            </value>
+        </member>
+        <member name="P:JsonRuleEngineDemoApi.Types.DemoType.DemoGuid">
+            <summary>
+            Gets or sets the demo unique identifier.
+            </summary>
+            <example>fa03ab21-a3ff-40d9-b216-2906de7d1307</example>
+            <value>
+            The demo unique identifier.
+            </value>
+        </member>
+        <member name="P:JsonRuleEngineDemoApi.Types.DemoType.DemoBool">
+            <summary>
+            Gets or sets a value indicating whether [demo bool].
+            </summary>
+            <example>false</example>
+            <value>
+              <c>true</c> if [demo bool]; otherwise, <c>false</c>.
+            </value>
+        </member>
+    </members>
+</doc>
